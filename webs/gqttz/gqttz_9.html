@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共青团团章</title>
+    <link rel="stylesheet" href="../../css/home.css">
+    <style>
+        p{
+            text-indent: 4rem;
+            font-size: 2rem;
+            text-size-adjust: 1rem;
+        }
+        .gqtzlan a{
+            margin:0 1rem;
+        }
+        h3{
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body style="background-image: linear-gradient(to left,
+#9c88ff,#3cadeb);" topmargin=0 leftmargin=0 link="black" alink="blue" vlink="black">
+    <!-- 头部分，即导航栏部分 -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars">
+        </div>
+        <nav class="navbar">
+            <a href="../home.html#home"> 首页 </a>
+            <a href="../home.html#about"> 共青团简介 </a>
+            <a href="../home.html#services"> 共青团资料 </a>
+            <a href="../home.html#blogs"> 青年视频 </a>
+        </nav>
+    </header>
+    
+    <!-- 章程部分 -->
+    <br>
+    <h1 class="heading"> <span>中 国 共 青 团 章 程</span></h1>
+    <div style="border: 0rem solid #000000; width: 70%; height: 100%;margin: 0 auto;" id="particles-js">
+        <a href=".././gqttz.html" class="btn">目　录</a>
+        <h3 align="center">第八章　团旗、团徽、团歌</h3>
+        <br>
+        <p>第三十七条　中国共产主义青年团团旗旗面为红色，象征革命胜利；左上角缀黄色五角星，周围环绕黄色圆圈，象征中国青年一代紧密团结在中国共产党周围。</p>
+        <br>
+        <p>第三十八条　中国共产主义青年团团徽的内容为团旗、齿轮、麦穗、初升的太阳及其光芒，写有“中国共青团”五字的绶带。它象征着共青团在马克思列宁主义、毛泽东思想的光辉照耀下，团结各族青年，朝着党所指引的方向奋勇前进。</p>
+        <br>
+        <p>第三十九条　中国共产主义青年团团歌为《光荣啊，中国共青团》。</p>
+        <br>
+        <p>第四十条　中国共产主义青年团的团旗、团徽、团歌是中国共产主义青年团的象征和标志。要按照规定制作和使用团旗、团徽、团歌。</p>
+    </div>
+
+    <!-- javascript 部分 -->
+    <!-- 粒子特效 -->
+    <script src="../../js/particles.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <!-- 导航栏滚动效果 -->
+    <script>
+        /* 获取选择器元素 */
+        let menu = document.querySelector('#menu-bars');/* 导航 */
+        let header = document.querySelector('header');/* 头部分 */
+        /* 当按钮被点击时执行 */
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        /*在元素滚动时执行*/
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+    </script>
+</body>
+</html>

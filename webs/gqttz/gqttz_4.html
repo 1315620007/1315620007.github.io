@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共青团团章</title>
+    <link rel="stylesheet" href="../../css/home.css">
+    <style>
+        p{
+            text-indent: 4rem;
+            font-size: 2rem;
+            text-size-adjust: 1rem;
+        }
+        .gqtzlan a{
+            margin:0 1rem;
+        }
+        h3{
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body style="background-image: linear-gradient(to left,
+#9c88ff,#3cadeb);" topmargin=0 leftmargin=0 link="black" alink="blue" vlink="black">
+    <!-- 头部分，即导航栏部分 -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars">
+        </div>
+        <nav class="navbar">
+            <a href="./home.html#home"> 首页 </a>
+            <a href="./home.html#about"> 共青团简介 </a>
+            <a href="./home.html#services"> 共青团资料 </a>
+            <a href="./home.html#blogs"> 青年视频 </a>
+        </nav>
+    </header>
+    
+    <!-- 章程部分 -->
+    <br>
+    <h1 class="heading"> <span>中 国 共 青 团 章 程</span></h1>
+    <div style="border: 0rem solid #000000; width: 70%; height: 100%;margin: 0 auto;" id="particles-js">
+        <a href=".././gqttz.html" class="btn">目　录</a>
+        <h3 align="center">第三章　团的中央组织</h3>
+        <br>
+        <p>第十五条　团的全国代表大会每五年举行一次，由中央委员会召集，在特殊情况下，可以提前或延期举行。</p>
+        <br>
+        <p>全国代表大会代表的名额及产生办法，由中央委员会决定。</p>
+        <br>
+        <p>第十六条　团的全国代表大会的职权是：</p>
+        <br>
+        <p>（一）审查和批准中央委员会的工作报告；</p>
+        <br>
+        <p>（二）讨论和决定全团的工作方针、任务和有关重大事项；</p>
+        <br>
+        <p>（三）修改团的章程；</p>
+        <br>
+        <p>（四）选举中央委员会。</p>
+        <br>
+        <p>在全国代表大会闭会期间，中央委员会执行全国代表大会的决议，领导团的全部工作。</p>
+        <br>
+        <p>第十七条　团的中央委员会全体会议选举常务委员若干人，组成常务委员会；选举第一书记一人和书记若干人，组成书记处。中央委员会全体会议由常务委员会召集，每年至少举行一次。在中央委员会全体会议和常务委员会闭会期间，书记处行使中央委员会的职权。</p>
+    </div>
+
+    <!-- javascript 部分 -->
+    <!-- 粒子特效 -->
+    <script src="../../js/particles.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <!-- 导航栏滚动效果 -->
+    <script>
+        /* 获取选择器元素 */
+        let menu = document.querySelector('#menu-bars');/* 导航 */
+        let header = document.querySelector('header');/* 头部分 */
+        /* 当按钮被点击时执行 */
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        /*在元素滚动时执行*/
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+    </script>
+</body>
+</html>

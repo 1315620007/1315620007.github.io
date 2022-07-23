@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共青团团徽</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body style="background-image: linear-gradient(to left,
+#9c88ff,#3cadeb);">
+    <!-- 头部分，即导航栏部分 -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars">
+        </div>
+        <nav class="navbar">
+            <a href="./home.html#home"> 首页 </a>
+            <a href="./home.html#about"> 共青团简介 </a>
+            <a href="./home.html#services"> 共青团资料 </a>
+            <a href="./home.html#blogs"> 青年视频 </a>
+        </nav>
+    </header>
+    
+    <!-- 团旗部分 -->
+    <br>
+    <h1 class="heading"> <span>中 国 共 青 团 团 徽</span></h1>
+    <div style="border: 0rem solid #000000; width: 70%; height: 100%;margin: 0 auto;" id="particles-js">
+        <img src="../imgs/团徽.png" width=60%>
+    </div>
+    
+    <!-- javascript 部分 -->
+    <!-- 粒子特效 -->
+    <script src="../js/particles.min.js"></script>
+    <script src="../js/app.js"></script>
+    <!-- 导航栏滚动效果 -->
+    <script>
+        /* 获取选择器元素 */
+        let menu = document.querySelector('#menu-bars');/* 导航 */
+        let header = document.querySelector('header');/* 头部分 */
+        /* 当按钮被点击时执行 */
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        /*在元素滚动时执行*/
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+    </script>
+</body>
+</html>

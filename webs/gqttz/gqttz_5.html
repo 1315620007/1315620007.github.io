@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共青团团章</title>
+    <link rel="stylesheet" href="../../css/home.css">
+    <style>
+        p{
+            text-indent: 4rem;
+            font-size: 2rem;
+            text-size-adjust: 1rem;
+        }
+        .gqtzlan a{
+            margin:0 1rem;
+        }
+        h3{
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body style="background-image: linear-gradient(to left,
+#9c88ff,#3cadeb);" topmargin=0 leftmargin=0 link="black" alink="blue" vlink="black">
+    <!-- 头部分，即导航栏部分 -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars">
+        </div>
+        <nav class="navbar">
+            <a href="../home.html#home"> 首页 </a>
+            <a href="../home.html#about"> 共青团简介 </a>
+            <a href="../home.html#services"> 共青团资料 </a>
+            <a href="../home.html#blogs"> 青年视频 </a>
+        </nav>
+    </header>
+    
+    <!-- 章程部分 -->
+    <br>
+    <h1 class="heading"> <span>中 国 共 青 团 章 程</span></h1>
+    <div style="border: 0rem solid #000000; width: 70%; height: 100%;margin: 0 auto;" id="particles-js">
+        <a href=".././gqttz.html" class="btn">目　录</a>
+        <h3 align="center">第四章　团的地方组织、解放军和武警部队中团的组织</h3>
+        <br>
+        <p>第十八条　团的省、自治区、直辖市的代表大会，设区的市和自治州的代表大会，县（旗）、自治县、不设区的市和市辖区的代表大会，每五年举行一次，一般在同级党的代表大会后一年内举行。</p>
+        <br>
+        <p>团的地方各级代表大会由同级团的委员会召集。在特殊情况下，经同级党的委员会和团的上级委员会批准，可以提前或延期举行。</p>
+        <br>
+        <p>第十九条　团的地方各级代表大会的职权是：</p>
+        <br>
+        <p>（一）审查和批准同级委员会的工作报告；</p>
+        <br>
+        <p>（二）讨论和决定本地区团的工作任务和有关重要事项；</p>
+        <br>
+        <p>（三）选举同级委员会；</p>
+        <br>
+        <p>（四）选举出席上一级团的代表大会的代表。</p>
+        <br>
+        <p>团的地方各级委员会在代表大会闭会期间，执行上级团组织的指示和同级团的代表大会的决议，领导本地方团的工作，定期向上级团的委员会报告工作。</p>
+        <br>
+        <p>第二十条　团的地方各级委员会全体会议选举各该级委员会的常务委员会和书记、副书记。团的地方各级委员会全体会议由常务委员会召集，每年至少举行一次。在委员会全体会议闭会期间，由常务委员会行使委员会的职权。</p>
+        <br>
+        <p>团的地方各级委员会的组成，必须经同级党的委员会和上级团的委员会批准。</p>
+        <br>
+        <p>第二十一条　中国人民解放军和中国人民武装警察部队中团的工作，是解放军和武警部队政治工作的重要组成部分，由中央军事委员会领导。中国人民解放军和中国人民武装警察部队中团的组织，在本单位党组织的领导下，根据团的章程、《中国人民解放军政治工作条例》和有关规定进行工作。</p>
+    </div>
+
+    <!-- javascript 部分 -->
+    <!-- 粒子特效 -->
+    <script src="../../js/particles.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <!-- 导航栏滚动效果 -->
+    <script>
+        /* 获取选择器元素 */
+        let menu = document.querySelector('#menu-bars');/* 导航 */
+        let header = document.querySelector('header');/* 头部分 */
+        /* 当按钮被点击时执行 */
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        /*在元素滚动时执行*/
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国庆版《少年中国说》  敢问天地试锋芒，披荆斩棘谁能挡！</title>
+    <link rel="stylesheet" href="../../css/home.css">
+    <style>
+        p{
+            text-indent: 4rem;
+            font-size: 2rem;
+            text-size-adjust: 1rem;
+        }
+        .gqtzlan a{
+            margin:0 2rem;
+        }
+        h3{
+            font-size: 3rem;
+            color: black;
+        }
+    </style>
+</head>
+<body style="background-image: linear-gradient(to left,
+#9c88ff,#3cadeb);" topmargin=0 leftmargin=0 link="black" alink="blue" vlink="black">
+    <!-- 头部分，即导航栏部分 -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars">
+        </div>
+        <nav class="navbar">
+            <a href="../home.html#home"> 首页 </a>
+            <a href="../home.html#about"> 共青团简介 </a>
+            <a href="../home.html#services"> 共青团资料 </a>
+            <a href="../home.html#blogs"> 青年视频 </a>
+        </nav>
+    </header>
+    
+    <!-- 视频部分 -->
+    <br>
+    <br>
+    <br>
+    <div style="border: 0rem solid #000000; width: 70%; height: 100%;margin: 0 auto;" id="particles-js">
+        <h3 align="center">国庆版《少年中国说》  敢问天地试锋芒，披荆斩棘谁能挡！</h3>
+        <br>
+        <br>
+        <p align="center">
+            <video src="../../video/国庆版《少年中国说》  敢问天地试锋芒，披荆斩棘谁能挡！.mp4" controls></video>
+        </p>
+    </div>
+
+    <!-- javascript 部分 -->
+    <!-- 粒子特效 -->
+    <script src="../../js/particles.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <!-- 导航栏滚动效果 -->
+    <script>
+        /* 获取选择器元素 */
+        let menu = document.querySelector('#menu-bars');/* 导航 */
+        let header = document.querySelector('header');/* 头部分 */
+        /* 当按钮被点击时执行 */
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        /*在元素滚动时执行*/
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+    </script>
+</body>
+</html>
